@@ -18,7 +18,7 @@ Description:
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
     <script src="script/mattbrysonGitHubTouchSwipePlugin.js"></script>
-        
+    
         <!-- READ MAJOR SCRIPT TO UNDERSTAND FUNCTIONALITY -->
     	<script type="text/javascript" src="script/major script.js"></script>
 </head>
@@ -48,7 +48,7 @@ Description:
     	<h2 id="pgBtContact" class="pageSelButton">
     		Contact
     	</h2>
-        <h2 id="pgBtContacts" class="pageSelButton">
+        <h2 id="pgBtContacts" class="pageSelButton" onClick="bizTac()">
         	Buisness Contacts
         </h2>
     </div>
@@ -60,3 +60,9 @@ Description:
 	<h3>Copyright 2013 John Earle</h3>
 </div>
 </body>
+   <script type="text/javascript">
+	   $('#pgBtContacts').click(function(){
+	   
+	   		window.open('pages/bizTac.php');
+	   });
+	   </script>
